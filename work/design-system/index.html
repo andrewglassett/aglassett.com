@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Building a Lean Design System — Sony Music — Andrew Glassett</title>
+  <meta name="description" content="How I got a design system for The Orchard / Sony Music moving by shipping one component end to end.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="home" href="../../">Andrew Glassett</a>
+    <nav aria-label="Primary">
+      <a href="../../#work" aria-current="page">Work</a>
+      <a href="../../about/">About</a>
+      <a href="https://drive.google.com/file/d/10W0kvD0g7JDvo6ZNONk2DnRyy_C4EdeG/view?usp=sharing" target="_blank" rel="noopener">Resume ↗</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <header class="case-head">
+      <p class="label">08 / The Orchard / Sony Music</p>
+      <h1>Building a lean design system</h1>
+    </header>
+
+    <dl class="meta">
+      <div><dt>Role</dt><dd>Lead Product Designer</dd></div>
+      <div><dt>Skills</dt><dd>Figma, Storybook, React Styleguidist, Jira</dd></div>
+      <div><dt>Deliverable</dt><dd>Prototypes, design comps, alignment</dd></div>
+    </dl>
+
+    <figure class="cover"><img src="../../images/design-system/01.webp" alt="Design system documentation on a laptop" width="1800" height="1044"></figure>
+
+    <article class="case">
+      <section>
+        <h2>Problem</h2>
+        <p>As the product suite grew, we needed more standardization to ensure consistency. The goal: a design system that scaled with the company.</p>
+      </section>
+
+      <section>
+        <h2>Background</h2>
+        <h3>Everyone thinks they need one. No one knows what it costs.</h3>
+        <p>Most product companies recognize they need a design system, but few understand how costly one can be, especially from scratch. Most companies can use what they have until they’re ready to invest at full scale.</p>
+        <p>Our initial efforts focused on being complete rather than efficient.</p>
+        <p>In a lean system, the fastest way to get flow is with the pipes you already have. Upgrading them later may be expensive, but getting water through the whole system is what makes it last. Building a system without the right pipes creates an immediate backlog of ideas that go stale.</p>
+        <figure><img src="../../images/design-system/02.webp" alt="Diagram of a design system disconnected from production" loading="lazy"><figcaption>Nice, all our designs look perfect. Too bad users can’t see any of it.</figcaption></figure>
+      </section>
+
+      <section>
+        <h2>Phase 1: Plan</h2>
+        <p>Planning doesn’t need to take long. Consensus forms quickly around the most common elements, and the most common, highest-impact element is a great place to start. Maybe a button?</p>
+        <figure><img src="../../images/design-system/03.webp" alt="Trello board for planning components" loading="lazy"><figcaption>Trello still works great for initial planning.</figcaption></figure>
+      </section>
+
+      <section>
+        <h2>Phase 2: Create one component</h2>
+        <p>Designers design the button. It doesn’t need to be final. What matters is that everyone agrees on a starting point and the process is quick.</p>
+        <figure><img src="../../images/design-system/04.webp" alt="Button component documentation" loading="lazy"></figure>
+      </section>
+
+      <section>
+        <h2>Phase 3: Connect the system</h2>
+        <p>The hardest part is the first connection, because it represents an entire slice of the future workflow. Getting there early leads to larger gains later, and signals to the organization that the system is real.</p>
+        <figure><img src="../../images/design-system/05.webp" alt="Jira board with design system labels" loading="lazy"><figcaption>Many teams can contribute when design system work uses a shared Jira label.</figcaption></figure>
+        <figure><img src="../../images/design-system/06.webp" alt="Diagram of a connected design system" loading="lazy"><figcaption>A working system: one button that end users can actually experience.</figcaption></figure>
+        <p>From here it’s all process, with three things to keep in mind:</p>
+        <ol>
+          <li><strong>Find an advocate in engineering.</strong> Look for someone frustrated with the current front end who wants to create efficiencies. It’s a long road, and they’ll help answer implementation questions.</li>
+          <li><strong>Tap into how your org already works.</strong> Dedicated design system teams are rare at mid-sized companies. A shared label inside existing workflows beats a separate board.</li>
+          <li><strong>Persist until the first element is in production.</strong> It’s easy to retreat to the comfort of pixels. Wait until the flow is connected.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>The process I designed</h2>
+        <ol>
+          <li><strong>Designers review every week.</strong> Designers hold the keys to visual and architectural consistency, so they need to meet consistently.</li>
+          <li><strong>A designer shows work that needs “a new something.”</strong> The group asks: Is it used somewhere already? Will it be used elsewhere? Does it carry specific business logic?</li>
+          <li><strong>Designers add it to the design system</strong> in Figma.</li>
+          <li><strong>The squad designer files a Jira ticket</strong> with the agreed-upon label. This is what ties everything together.</li>
+          <li><strong>Engineering decides</strong> whether a squad member builds it or it goes to the design system owner.</li>
+          <li><strong>It gets built</strong>, the designer reviews it, and it ships to production.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>A more robust system</h2>
+        <p>Now we could invest in more connections or better pipes. A presentation layer for the code sped up auditing and development.</p>
+        <figure><img src="../../images/design-system/07.webp" alt="React Styleguidist component documentation" loading="lazy"><figcaption>React Styleguidist, used to display components.</figcaption></figure>
+        <figure><img src="../../images/design-system/08.webp" alt="Organized Figma library with thumbnails" loading="lazy"><figcaption>Nicely designed thumbnails make the Figma library easy to scan.</figcaption></figure>
+      </section>
+
+      <section>
+        <h2>Takeaways</h2>
+        <ul>
+          <li>A design system is about momentum. Shipping a single component end to end is the quickest way to create initial inertia.</li>
+          <li>Put extra effort into the initial scaffolding so the rest of the system is supported.</li>
+          <li>Eventually momentum crests the hill and the system starts carrying itself. It still needs guidance, but less and less effort as it grows.</li>
+        </ul>
+      </section>
+    </article>
+
+    <a class="next" href="../sony-payments/"><span class="label">Next — 01</span><strong>Royalty payments for music labels</strong></a>
+  </main>
+
+  <footer class="site-footer">
+    <a class="cta" href="mailto:andrewglassett@gmail.com">Let's talk</a>
+    <ul class="links">
+      <li><a href="mailto:andrewglassett@gmail.com">andrewglassett@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/andrewglassett/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+      <li><a href="https://drive.google.com/file/d/10W0kvD0g7JDvo6ZNONk2DnRyy_C4EdeG/view?usp=sharing" target="_blank" rel="noopener">Resume ↗</a></li>
+      <li>© 2026</li>
+    </ul>
+  </footer>
+</body>
+</html>
