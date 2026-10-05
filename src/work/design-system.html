@@ -1,0 +1,86 @@
+slug: design-system
+title: Building a Lean Design System — Sony Music
+description: How I got a design system for The Orchard / Sony Music moving by shipping one component end to end.
+num: 08
+client: The Orchard / Sony Music
+h1: Building a lean design system
+Role: Lead Product Designer
+Skills: Figma, Storybook, React Styleguidist, Jira
+Deliverable: Prototypes, design comps, alignment
+cover_alt: Design system documentation on a laptop
+cover_h: 1044
+next_slug: sony-payments
+next_num: 01
+next_title: Royalty payments for music labels
+tldr_bg: #1ea1c4
+tldr: Got a stalled design system moving by shipping one button end to end, then designed a weekly review process that let any squad contribute through its existing Jira workflow.
+kpi1: +10% | Design consistency & efficiency
+kpi2: 1 | Component to prove the pipeline
+kpi3: 6 | Step contribution process
+
+      <section>
+        <h2>Problem</h2>
+        <p>As the product suite grew, we needed more standardization to ensure consistency. The goal: a design system that scaled with the company.</p>
+      </section>
+
+      <section>
+        <h2>Background</h2>
+        <h3>Everyone thinks they need one. No one knows what it costs.</h3>
+        <p>Most product companies recognize they need a design system, but few understand how costly one can be, especially from scratch. Most companies can use what they have until they’re ready to invest at full scale.</p>
+        <p>Our initial efforts focused on being complete rather than efficient.</p>
+        <p>In a lean system, the fastest way to get flow is with the pipes you already have. Upgrading them later may be expensive, but getting water through the whole system is what makes it last. Building a system without the right pipes creates an immediate backlog of ideas that go stale.</p>
+        [img 02 Diagram of a design system disconnected from production|Nice, all our designs look perfect. Too bad users can’t see any of it.]
+      </section>
+
+      <section>
+        <h2>Phase 1: Plan</h2>
+        <p>Planning doesn’t need to take long. Consensus forms quickly around the most common elements, and the most common, highest-impact element is a great place to start. Maybe a button?</p>
+        [img 03 Trello board for planning components|Trello still works great for initial planning.]
+      </section>
+
+      <section>
+        <h2>Phase 2: Create one component</h2>
+        <p>Designers design the button. It doesn’t need to be final. What matters is that everyone agrees on a starting point and the process is quick.</p>
+        [img 04 Button component documentation]
+      </section>
+
+      <section>
+        <h2>Phase 3: Connect the system</h2>
+        <p>The hardest part is the first connection, because it represents an entire slice of the future workflow. Getting there early leads to larger gains later, and signals to the organization that the system is real.</p>
+        [img 05 Jira board with design system labels|Many teams can contribute when design system work uses a shared Jira label.]
+        [img 06 Diagram of a connected design system|A working system: one button that end users can actually experience.]
+        <p>From here it’s all process, with three things to keep in mind:</p>
+        <ol>
+          <li><strong>Find an advocate in engineering.</strong> Look for someone frustrated with the current front end who wants to create efficiencies. It’s a long road, and they’ll help answer implementation questions.</li>
+          <li><strong>Tap into how your org already works.</strong> Dedicated design system teams are rare at mid-sized companies. A shared label inside existing workflows beats a separate board.</li>
+          <li><strong>Persist until the first element is in production.</strong> It’s easy to retreat to the comfort of pixels. Wait until the flow is connected.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>The process I designed</h2>
+        <ol>
+          <li><strong>Designers review every week.</strong> Designers hold the keys to visual and architectural consistency, so they need to meet consistently.</li>
+          <li><strong>A designer shows work that needs “a new something.”</strong> The group asks: Is it used somewhere already? Will it be used elsewhere? Does it carry specific business logic?</li>
+          <li><strong>Designers add it to the design system</strong> in Figma.</li>
+          <li><strong>The squad designer files a Jira ticket</strong> with the agreed-upon label. This is what ties everything together.</li>
+          <li><strong>Engineering decides</strong> whether a squad member builds it or it goes to the design system owner.</li>
+          <li><strong>It gets built</strong>, the designer reviews it, and it ships to production.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>A more robust system</h2>
+        <p>Now we could invest in more connections or better pipes. A presentation layer for the code sped up auditing and development.</p>
+        [img 07 React Styleguidist component documentation|React Styleguidist, used to display components.]
+        [img 08 Organized Figma library with thumbnails|Nicely designed thumbnails make the Figma library easy to scan.]
+      </section>
+
+      <section>
+        <h2>Takeaways</h2>
+        <ul>
+          <li>A design system is about momentum. Shipping a single component end to end is the quickest way to create initial inertia.</li>
+          <li>Put extra effort into the initial scaffolding so the rest of the system is supported.</li>
+          <li>Eventually momentum crests the hill and the system starts carrying itself. It still needs guidance, but less and less effort as it grows.</li>
+        </ul>
+      </section>
